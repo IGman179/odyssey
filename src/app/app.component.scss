@@ -1,0 +1,326 @@
+.bg-pg {
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url(../assets/img/ac_bg-light_ncsa.png);
+  background-attachment: fixed;
+}
+
+.img-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.navbar-brand {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #795548;
+  &:hover {
+    color: #795548;
+  }
+}
+
+.nav-item {
+  margin: 0 5px;
+  &:hover {
+    color: #cd9d6a;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+  margin: 0 -5px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #cd9d6a;
+  font-family: "Cinzel", serif;
+  &:hover {
+    color: #795548;
+  }
+  &.active {
+    color: #795548;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin: 0 -5px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #cd9d6a;
+  font-family: "Cinzel", serif;
+  &:hover {
+    color: #795548;
+  }
+  &.active {
+    color: #795548;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background: #cd9d6a;
+  .img-company {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .footer-info {
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Cinzel", serif;
+    margin-bottom: 20px;
+  }
+  .btn-a {
+    font-size: 16px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: #090d8c;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-logo {
+    margin-left: 10px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar-brand {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    color: #795548;
+    &:hover {
+      color: #795548;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .nav-item {
+    width: 20%;
+    padding: 1%;
+    cursor: pointer;
+    margin: 0 5px;
+
+    &:hover {
+      color: #cd9d6a;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    margin: 0 -5px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #cd9d6a;
+    font-family: "Cinzel", serif;
+    &:hover {
+      color: #795548;
+    }
+    &.active {
+      color: #795548;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    background: #cd9d6a;
+    .img-company {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+    .footer-info {
+      color: #000;
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Cinzel", serif;
+      margin-bottom: 20px;
+    }
+    .btn-a {
+      font-size: 16px;
+      font-family: "Cinzel", serif;
+      font-weight: 700;
+      color: #090d8c;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #795548;
+    &:hover {
+      color: #795548;
+    }
+  }
+
+  .navbar-brand {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    color: #795548;
+    &:hover {
+      color: #795548;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    margin: 0 -5px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #cd9d6a;
+    font-family: "Cinzel", serif;
+    &:hover {
+      color: #795548;
+    }
+    &.active {
+      color: #795548;
+    }
+  }
+
+  .footer {
+    width: 99%;
+    height: auto;
+    background: #cd9d6a;
+    .img-company {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      .footer-box {
+        width: 20%;
+      }
+      .img-footer {
+        width: 100%;
+      }
+    }
+    .footer-info {
+      color: #000;
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Cinzel", serif;
+      margin-bottom: 20px;
+    }
+    .btn-a {
+      font-size: 16px;
+      font-family: "Cinzel", serif;
+      font-weight: 700;
+      color: #090d8c;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .img-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar-toggler {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    line-height: 1;
+    border-radius: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #795548;
+    &:hover {
+      color: #795548;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    margin: 0 -5px;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    color: #cd9d6a;
+    font-family: "Cinzel", serif;
+    &:hover {
+      color: #795548;
+    }
+    &.active {
+      color: #795548;
+    }
+  }
+
+  .footer {
+    width: 99%;
+    height: auto;
+    background: #cd9d6a;
+    .img-company {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      .footer-box {
+        width: 20%;
+      }
+      .img-footer {
+        width: 100%;
+      }
+    }
+    .footer-info {
+      color: #000;
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Cinzel", serif;
+      margin-bottom: 20px;
+    }
+    .btn-a {
+      font-size: 16px;
+      font-family: "Cinzel", serif;
+      font-weight: 700;
+      color: #090d8c;
+    }
+  }
+}

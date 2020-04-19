@@ -1,0 +1,33 @@
+<div class="list-forum-bg-pg">
+  <div class="container">
+    <div class="row">
+      <section class="list-forum col-12">
+        <div class="pg-frame">
+          <div class="box">
+            <h1 class="title">Assassin Creed Odyseey</h1>
+            <div class="todo-coment" *ngFor="let todo of todos">
+              <label class="label-coment">
+
+                <div class="todo">
+                  <div class="todo-name-box">
+                    <p>{{ todo.name }}</p>
+                  </div>
+                  <span class="btn btn-danger" (click)="removeTodo(todo.id)">
+                    X
+                  </span>
+                </div>
+
+                <hr class="forum-line" />
+                
+                <div class="todo-text-box">
+                  <p>{{ todo.text }}</p>
+                </div>
+
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

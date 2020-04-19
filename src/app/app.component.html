@@ -1,0 +1,82 @@
+<div class="bg-pg">
+  <div class="container">
+    <div class="row">
+      <nav class="navbar col-12 navbar-expand-lg navbar-light bg-light">
+        <img
+          src="../assets/img/aco_preloader.gif"
+          alt=""
+          class="img-logo"
+        />
+        <a class="navbar-brand" routerLink="home">
+          Assassin's Creed Odyssey
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" 
+        (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="home" routerLinkActive="active"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="about" routerLinkActive="active"> About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="personage" routerLinkActive="active"> Personage  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="forum"  routerLinkActive="active">Forum</a>
+            </li>
+            <li class="nav-item">
+              <div *ngIf="authService.user$ | async; else showLogin">
+                <span class="nav-link" (click)="authService.logout()">Logout</span>
+              </div>
+              <ng-template #showLogin>          
+                <div>
+                  <a class="nav-link" routerLink="auth"  routerLinkActive="active">Login</a>
+                </div>
+              </ng-template>
+            </li>
+          </ul>    
+        </div>
+      </nav>
+    </div>
+  </div> 
+  <router-outlet></router-outlet>
+  <div class="container">
+    <div class="row">
+      <div class="footer">
+        <div class="img-company">
+          <div class="footer-box">
+            <img class="img-footer"
+              src="../assets/img/white.png"
+            />
+          </div>
+          <div class="footer-box">
+            <img class="img-footer"
+              src="../assets/img/logo-stote.jpg"
+            />
+          </div>
+          <div class="footer-box">
+            <img class="img-footer"
+              src="../assets/img/logo-stote.jpg"
+            />
+          </div>
+          <div class="footer-box">
+            <img class="img-footer"
+              src="../assets/img/logo-uplay.png"
+            />
+          </div>
+        </div>
+        <div class="footer-info">
+          © 2020 Над проектом працював Ivan Glinka.
+          <a class="btn-a" href="https://assassinscreed.ubisoft.com/game/ru-ru/odyssey">
+            Оригінальний сайт
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

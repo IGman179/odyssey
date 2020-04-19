@@ -1,0 +1,526 @@
+.list-forum-bg-pg {
+  width: 100%;
+  height: 100%;
+}
+
+.list-forum {
+  padding: 2px;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../images/ac_forum_bg_emea.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.pg-frame {
+  min-height: 98vh;
+  height: 99%;
+  width: 99%;
+  border-style: solid;
+  border-width: 50px;
+  display: flex;
+  align-items: center;
+  border-image: url(../img/ac_border-img-4_ncsa.png) 35 35 stretch;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  text-shadow: 0 2px 4.75px rgba(0, 0, 0, 0.25);
+  font-weight: 750;
+  font-size: 38px;
+  line-height: 38px;
+  letter-spacing: -0.02px;
+  color: #fff;
+}
+
+.todo-coment {
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  opacity: 0.9;
+}
+
+.label-coment {
+  width: 100%;
+  max-height: 300px;
+}
+
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: auto;
+}
+
+.todo-name-box {
+  font-size: 24px;
+  margin: 0 10px;
+  // white-space: nowrap;
+}
+
+.forum-line {
+  width: 90%;
+  border: 3px solid #f4d5b4;
+}
+
+.todo-text-box {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.btn {
+  width: 120px;
+  margin: 20px;
+  align-items: center;
+  background: url(../img/ac_btn-glow-bg_ncsa.png) -9px 0 no-repeat,
+    url(../img/ac_btn-primary-left-bg_ncsa.png) 0 0 no-repeat,
+    url(../img/ac_btn-primary-right-bg_ncsa.png) right 0 no-repeat, #f4d5b4;
+  background-size: 100% 100%;
+  border: 0px;
+  display: inline-flex;
+  justify-content: center;
+
+  line-height: 1;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000;
+  font-family: "Cinzel", serif;
+
+  max-height: 40px;
+  padding: 10px 50px;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+
+  &:hover {
+    margin: 20px;
+    align-items: center;
+    background: url(../img/ac_btn-glow-bg_ncsa.png) -9px 0 no-repeat,
+      url(../img/ac_btn-primary-left-bg_ncsa.png) 0 0 no-repeat,
+      url(../img/ac_btn-primary-right-bg_ncsa.png) right 0 no-repeat, #f4d5b4;
+    background-size: 0% 0%;
+    border: 0px solid #f4d5b4;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+
+    max-height: 40px;
+    padding: 10px 50px;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1200px) {
+  .list-forum {
+    margin: 10px 0;
+    padding: 2px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/ac_forum_bg_emea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .pg-border {
+    height: 98%;
+    width: 99%;
+    border-style: solid;
+    border-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: url(../img/ac_border-img-4_ncsa.png) 35 35 stretch;
+  }
+
+  .border {
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-width: 35px;
+    border-image: url(../img/ac_border-img-4_ncsa.png) 35 35 stretch;
+  }
+
+  .box {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    margin: 8px 0;
+    font-size: 25px;
+    line-height: 24px;
+  }
+
+  form {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-lable {
+    color: #fff;
+  }
+
+  .btn {
+    margin: 10px;
+    max-height: 70%;
+    padding: 8px 20px;
+
+    &:hover {
+      margin: 10px;
+      max-height: 70%;
+      padding: 8px 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .list-forum {
+    margin: 10px 0;
+    padding: 2px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/ac_forum_bg_emea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .pg-border {
+    height: 98%;
+    width: 99%;
+    border-style: solid;
+    border-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: url(../img/ac_border-img-4_ncsa.png) 35 35 stretch;
+  }
+
+  .border {
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-width: 35px;
+    border-image: url(../img/ac_border-img-4_ncsa.png) 35 35 stretch;
+  }
+
+  .box {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    margin: 8px 0;
+    font-size: 25px;
+    line-height: 24px;
+  }
+
+  form {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-lable {
+    color: #fff;
+  }
+
+  .btn {
+    margin: 10px;
+    max-height: 70%;
+    padding: 8px 20px;
+
+    &:hover {
+      margin: 10px;
+      max-height: 70%;
+      padding: 8px 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .list-forum-bg-pg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .list-forum {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/ac_forum_bg_emea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .pg-frame {
+    min-height: 98vh;
+    height: 99%;
+    width: 99%;
+    border-style: solid;
+    border-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: url(../img/ac_border-img-4_ncsa.png) 35 35 stretch;
+  }
+
+  .box {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-family: "Cinzel", serif;
+    text-align: center;
+    text-shadow: 0 2px 4.75px rgba(0, 0, 0, 0.25);
+    font-weight: 750;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.02px;
+    color: #fff;
+  }
+
+  form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-lable {
+    color: #fff;
+  }
+
+  .btn {
+    margin: 20px;
+    align-items: center;
+    background: url(../img/ac_btn-glow-bg_ncsa.png) -9px 0 no-repeat,
+      url(../img/ac_btn-primary-left-bg_ncsa.png) 0 0 no-repeat,
+      url(../img/ac_btn-primary-right-bg_ncsa.png) right 0 no-repeat, #f4d5b4;
+    background-size: 100% 100%;
+    border: 0px;
+    display: inline-flex;
+    justify-content: center;
+
+    line-height: 1;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Cinzel", serif;
+
+    max-height: 40px;
+    padding: 10px 50px;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+
+    &:hover {
+      margin: 20px;
+      align-items: center;
+      background: url(../img/ac_btn-glow-bg_ncsa.png) -9px 0 no-repeat,
+        url(../img/ac_btn-primary-left-bg_ncsa.png) 0 0 no-repeat,
+        url(../img/ac_btn-primary-right-bg_ncsa.png) right 0 no-repeat, #f4d5b4;
+      background-size: 0% 0%;
+      border: 0px solid #f4d5b4;
+      display: inline-flex;
+      justify-content: center;
+      line-height: 1;
+
+      max-height: 40px;
+      padding: 10px 50px;
+      position: relative;
+      overflow: visible;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .list-forum-bg-pg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .list-forum {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/ac_forum_bg_emea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .pg-frame {
+    min-height: 98vh;
+    height: 99%;
+    width: 99%;
+    border-style: solid;
+    border-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: url(../img/ac_border-img-4_ncsa.png) 35 35 stretch;
+  }
+
+  .box {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-family: "Cinzel", serif;
+    text-align: center;
+    text-shadow: 0 2px 4.75px rgba(0, 0, 0, 0.25);
+    font-weight: 750;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.02px;
+    color: #fff;
+  }
+
+  .todo-name-box {
+    font-size: 14px;
+    margin: 0px 5px;
+  }
+
+  form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-lable {
+    color: #fff;
+  }
+
+  .btn-hover {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .btn {
+    margin: 10px;
+    align-items: center;
+    background: url(../img/ac_btn-glow-bg_ncsa.png) -9px 0 no-repeat,
+      url(../img/ac_btn-primary-left-bg_ncsa.png) 0 0 no-repeat,
+      url(../img/ac_btn-primary-right-bg_ncsa.png) right 0 no-repeat, #f4d5b4;
+    background-size: 100% 100%;
+    border: 0px;
+    display: inline-flex;
+    justify-content: center;
+
+    line-height: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Cinzel", serif;
+
+    max-height: 40px;
+    padding: 10px 10px;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+
+    &:hover {
+      margin: 20px;
+      align-items: center;
+      background: url(../img/ac_btn-glow-bg_ncsa.png) -9px 0 no-repeat,
+        url(../img/ac_btn-primary-left-bg_ncsa.png) 0 0 no-repeat,
+        url(../img/ac_btn-primary-right-bg_ncsa.png) right 0 no-repeat, #f4d5b4;
+      background-size: 0% 0%;
+      border: 0px solid #f4d5b4;
+      display: inline-flex;
+      justify-content: center;
+      line-height: 1;
+
+      max-height: 40px;
+      padding: 10px 50px;
+      position: relative;
+      overflow: visible;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+}

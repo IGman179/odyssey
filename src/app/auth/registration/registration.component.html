@@ -1,0 +1,44 @@
+<div class="registration-bg-pg">
+    <div class="container">
+      <div class="row">
+        <section class="registration col-12">
+          <div class="pg-frame">
+            <div class="frame">
+              <div class="box">
+                <h1 class="title">Assassin Creed Odyseey</h1>
+                <form class="form-box" [formGroup]="formReg" (ngSubmit)="registration()">
+                  <div class="alert alert-danger" role="alert" *ngIf="serverError">
+                    {{serverError}}
+                  </div>
+                  <div class="form-group">
+                    <label class="form-lable" for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+                    <!-- <mat-error *ngIf="formReg.controls.email.hasError('email')">
+                      Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="formReg.controls.email.hasError('required')">
+                      Email is <strong>required</strong>
+                    </mat-error> -->
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="form-lable" for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+
+                    <!-- <mat-error *ngIf="formReg.controls.password.hasError('required')">
+                      Password is <strong>required</strong>
+                    </mat-error> -->
+                    
+                  </div>
+                  <div class="btn-hover">
+                    <button type="submit" class="btn" [disabled]="!formReg.valid">Registration</button>
+                  </div>  
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  
