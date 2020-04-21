@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     .then(res => {
       this.loginAccess = false;
       console.log(res);
-      this.router.navigate(['./about']);
+      this.router.navigate(['./forum']);
     })
     .catch(er => {
       this.loginAccess = false;
